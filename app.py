@@ -40,4 +40,4 @@ def predict():
     return render_template('credit.html', prediction_text='CUSTOMER WILL{}'.format(res_val))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=5001,debug=True)
